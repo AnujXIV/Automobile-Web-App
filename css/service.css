@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "North Avellion";
+    src: url(../fonts/North\ Avellion\ DEMO.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "New York Grunge";
+    src: url(../fonts/FontsFree-Net-New-york-Regular-Grunge.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Ailerons";
+    src: url(../fonts/Ailerons-Regular.ttf) format('truetype');
+}
+
+:root {
+    --primary-font-clr: #f9f9f9;
+    --playfair-font: 'Playfair Display', serif;
+    --inter-font: 'Inter', sans-serif;
+    --trocchi-font: 'Trocchi', serif;
+    --north-avellion-font: 'North Avellion', serif;
+    --newyork-font: 'New York Grunge', serif;
+    --aileron-font: 'Ailerons', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    font-family: serif;
+}
+
+.automobile {
+    font-family: var(--aileron-font);
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.container-custom {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
+
+@media (min-width:1000px) {
+    .container-custom {
+        padding: 0 100px;
+    }
+}
+
+@media (min-width:2000px) {
+    .container-custom {
+        padding: 0 250px;
+    }
+}
+
+.header {
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-logo {
+    font-size: 1.4rem;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.navlist .nav-item:hover {
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212121;
+    z-index: 6;
+}
+
+.dropdown-nav__closeNavBtn {
+    color: #cc0000;
+}
+
+.mob-nav-list>a {
+    padding: 10px;
+    color: white;
+}
+
+.mob-nav-list>a>span:hover {
+    border-bottom: 1px solid;
+}
+
+.SectionIntro {
+    height: 100vh;
+    width: 100%;
+}
+
+.SectionIntroOverlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    /* background: rgb(192, 0, 255); */
+    /* background: linear-gradient(180deg, rgba(192, 0, 255, 0.3) 15%, rgba(47, 11, 246, 0.6) 85%); */
+    background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(0, 0, 0, .5) 50%);
+}
+
+.SectionIntro>img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.SectionIntro>div {
+    z-index: 2;
+}
+
+.SectionIntro div.container-custom {
+    z-index: 4;
+    top: 30%;
+}
+
+.SectionIntro div.IntroTagline {
+    bottom: 10%;
+}
+
+.IntroTagline>span:nth-child(2n+1) {
+    font-size: 1rem;
+    /* background-color: #cc0000; */
+}
+
+@media (min-width:321px) {
+    .IntroTagline>span:nth-child(2n+1) {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:768px) {
+    .IntroTagline>span:nth-child(2n+1) {
+        font-size: 1.5rem;
+    }
+}
+
+.LongSlash {
+    font-size: 2.5rem;
+}
+
+@media (min-width:320px) {
+    .LongSlash {
+        font-size: 4.5rem;
+    }
+}
+
+.SectionTwo {
+    width: 100%;
+    height: 60vh;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+.SectionImage1 {
+    width: 70%;
+    height: 60vh;
+    z-index: 6;
+    clip-path: polygon(0% 0%, 45% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 45% 0%, 100% 100%, 0% 100%);
+    transition: 2s;
+}
+
+.SectionImage2 {
+    width: 70%;
+    height: 60vh;
+    z-index: 6;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 55% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 55% 100%);
+    right: 0;
+    transition: 2s;
+}
+
+.SectionImage1>img,
+.SectionImage2>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SectionImage1>img:hover,
+.SectionImage2>img:hover {
+    /* -webkit-filter: blur(3px);
+    filter: blur(3px); */
+    transition: 2s;
+}
+
+.Section2-Context {
+    width: 60%;
+    top: 60%;
+    z-index: 5;
+}
+
+.ContextSubHead {
+    padding-top: 1rem;
+}
+
+.ContextAdvantages {
+    list-style-type: square;
+}
+
+.ContextAdvantages .Advantage {
+    padding: .5rem 0;
+    font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    background-color: #212121;
+}
+
+.content:hover {
+    color: black;
+    background-color: white;
+}
+
+.social-media>li>a>i {
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.VideoBanner {
+    min-height: 100%;
+}
+
+.VideoBanner video {
+    height: 100%;
+    object-fit: cover;
+}
+
+.CarPng>img {
+    top: -30%;
+}
+
+@media (min-width:768px) {
+    .CarPng>img {
+        top: -20%;
+    }
+}
+
+.Banner {
+    background-color: #212121;
+}
+
+.section-5 {
+    margin: 3rem 0;
+}
+
+.ImageOverlay {
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: .5s;
+    opacity: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.ImageOverlay .h2 {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.SectionImage1:hover,
+.SectionImage2:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: 2s;
+}
+
+.ImageEffect {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: 2s;
+}
+
+.SectionImage1:hover .ImageOverlay,
+.SectionImage2:hover .ImageOverlay {
+    opacity: 1;
+    transition: 1s;
+}

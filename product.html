@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FontAwesome Icons -->
+    <!-- <link rel="stylesheet" href="./css/fontawesome.css"> -->
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/product.css" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header container-custom position-relative">
+        <nav class="navbar row text-white justify-content-between text-center align-content-center g-0">
+            <div class="col d-flex">
+                <a class="header-logo text-decoration-none text-white fw-bold automobile" href="index.html">Automobile</a>
+            </div>
+            <div class="col col-lg-10 container-fluid d-flex justify-content-end">
+                <span class="d-flex d-lg-none navbar-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-2 d-flex"></i
+          ></span>
+                <ul class="navlist list-unstyled d-none d-lg-inline-flex my-auto">
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('collection.html');">Collection</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('service.html');">Service</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('accessories.html');">Accessories</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('contact.html');">Contact</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('auth-templates/sign-in.html');">Account</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Small Screen Navbar -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        <div class="container-custom mt-2 row text-white justify-content-between text-center align-content-center">
+            <div class="col d-flex justify-content-end container-fluid">
+                <span class="d-flex d-lg-none dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle
+    navigation"><i class="bi bi-x-circle-fill fs-1"></i
+          ></span>
+            </div>
+            <div class="row align-items-center">
+                <div class="mob-nav-list col mt-5">
+                    <a href="collection.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Collection</span></a>
+                    <a href="service.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Service</span></a>
+                    <a href="accessories.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Accessories</span></a>
+                    <a href="contact.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Contact</span></a>
+                    <a href="auth-templates/sign-in.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Account</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Small Screen Navbar End-->
+
+    <!-- Section Breadcrumb -->
+    <section class="section-breadcrumb my-2">
+        <div class="container-custom">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a class="text-decoration-none" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="text-decoration-none" href="#">Collection</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Car</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Section Breadcrumb End -->
+
+    <!-- Section Product -->
+    <section class="product-section mb-4">
+        <div class="container-custom">
+            <div class="row product_car">
+                <div class="row price gx-1 gx-sm-3 mx-auto">
+                    <h1 class="col-auto fw-bold my-auto">BMW I8</h1>
+                    <h1 class="col text-end fw-bold my-auto p-0">
+                        ₹40 Lakhs
+                    </h1>
+                </div>
+                <div class="row mb-2 mx-auto gx-1 gx-sm-3">
+                    <nav class="col-auto my-auto">
+                        <ul class="tags list-unstyled d-inline-flex p-0 my-auto">
+                            <li class="tags-item pe-2">
+                                <a href="#" class="text-decoration-none">2022</a>
+                            </li>
+                            <li class="tags-item pe-2">
+                                <a href="#" class="text-decoration-none">Exclusive</a>
+                            </li>
+                            <li class="tags-item pe-2">
+                                <a href="#" class="text-decoration-none">Electric</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col my-auto fw-bold text-end text-muted p-0 favs">
+                        <i class="bi bi-heart"></i> <span class="favs_text">Favourites</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-5.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/bmw-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="details-box d-flex my-3 my-lg-auto">
+                        <table class="details-table">
+                            <tbody class="my-auto">
+                                <tr>
+                                    <td class="fw-bold">Company</td>
+                                    <td class="text-end">BMW</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Model</td>
+                                    <td class="text-end">I8</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Color</td>
+                                    <td class="text-end">White</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Drive Type</td>
+                                    <td class="text-end">Rear Wheel</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Condition</td>
+                                    <td class="text-end">New</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Year</td>
+                                    <td class="text-end">2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Mileage</td>
+                                    <td class="text-end">590 kms</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Fuel Type</td>
+                                    <td class="text-end">Electric</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Engine Size</td>
+                                    <td class="text-end">4.8L</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Doors</td>
+                                    <td class="text-end">4-door</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Cylinders</td>
+                                    <td class="text-end">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Car ID</td>
+                                    <td class="text-end">#2022ID55440</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-1 order-lg-0">
+                    <div class="fw-bold mt-3 fs-5">Description</div>
+                    <p class="text-muted justify-text readMore">
+                        The BMW i8 is a plug-in hybrid sports car developed by BMW. The i8 was part of BMW's electrified fleet and was marketed under the BMW i sub-brand. The production version of the BMW i8 was unveiled at the 2013 Frankfurt Motor Show and was released in Germany
+                        in June 2014. Deliveries to retail customers in the U.S. began in August 2014. A roadster variant was launched in May 2018. Production ended in June 2020. The 2015 BMW i8 accelerated from 0 to 100 km/h (62 mph) in 4.4 seconds and
+                        had an electronically limited top speed of 250 km/h (155 mph). The 2015 model year i8 had a 7.1-kWh lithium-ion battery pack that delivered an all-electric range of 37 km (23 mi) under the New European Driving Cycle. Under the
+                        U.S. EPA cycle, the range in EV mode was 24 km (15 mi). The battery capacity of both the BMW i8 Roadster and the i8 Coupe was increased to 11.6 kWh in 2018, allowing the NEDC electric range to rise to 55 km (34 mi) for the coupé
+                        and 53 km (33 mi) for the roadster. The BMW i8 coupé had a fuel efficiency of 2.1 L/100 km (134.5 mpg imp; 112.0 mpg-US) under the NEDC test with carbon emissions of 49 g/km. The EPA rated the i8 combined fuel economy at 76 MPGe
+                        (3.1 L gasoline-equivalent/100 km; 91 mpg-imp gasoline-equivalent) and 29 miles per gallon (6.7L/100 km) when running in pure gasoline mode.By March 2020, global sales of all variants had reached more than 20,000 units, making
+                        the BMW i8 the world's top-selling plug-in electric sports car, and exceeding sales of all competitors in its segment combined.
+                        <span class="moretext">
+                            possimus quia totam provident est facilis fuga. Distinctio dolorum doloremque eius minus quibusdam, provident optio facilis nisi deserunt tempore! Aspernatur nisi excepturi ab adipisci tempora
+                            repellendus perferendis soluta. Sint aperiam nulla tempore eaque dolorem dolor commodi maxime esse beatae labore deleniti similique ipsa vel quo, ullam a necessitatibus voluptatem. Explicabo in ipsum ex voluptas nulla ullam mollitia
+                            laudantium dolorem amet molestiae aliquid officia cum dignissimos libero sint, sed error fugit enim, quaerat ipsam rem odio ut. Fuga, temporibus quia. Autem obcaecati beatae distinctio non, dignissimos esse numquam, eaque ipsum
+                            officiis eius qui debitis nobis deserunt tempore nam facere optio aliquid cum rerum, atque ad aut quam! Accusamus, dolores dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maiores similique tenetur aut, temporibus
+                            at numquam cum, suscipit corrupti neque ex enim perferendis maxime quas quae consequuntur laudantium, vel nam. Illum nobis atque nulla porro esse beatae, quibusdam error perspiciatis accusantium. Placeat, obcaecati! Hic quae laborum
+                            expedita incidunt saepe, animi totam harum, voluptatem, nobis necessitatibus officiis asperiores ea quos sapiente! Est perferendis quasi eos reiciendis sint earum ratione, distinctio repudiandae cum architecto? Libero cum aliquam
+                            excepturi odit perspiciatis, esse tenetur nostrum adipisci necessitatibus rerum iusto cupiditate totam veritatis exercitationem ullam. Saepe incidunt deleniti numquam nihil eaque maxime rem iste ipsa. Cum quo debitis consequuntur
+                            iste pariatur, doloremque odit ut reprehenderit molestiae, accusantium voluptatibus modi saepe dicta quasi eveniet vero eius? Rerum laborum, eaque a, possimus numquam earum amet voluptate pariatur nulla eius maxime dolorem dolorum
+                            neque dolore porro, error dicta vero? Delectus voluptate quibusdam soluta totam rem, perferendis explicabo consectetur.
+                        </span>
+                        <span class="moreless-btn link-primary text-decoration-underline">Read more...</span>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 order-0 order-lg-1">
+                    <button class="row purchase-btn btn btn-success w-100 mt-3 mx-auto">
+                        Buy Now
+                    </button>
+                    <button class="row purchase-btn btn btn-outline-dark w-100 mt-2 mx-auto">
+                        Test Drive
+                    </button>
+                    <div class="row mt-2 py-3 mx-auto gx-1 gx-sm-2">
+                        <span class="col-auto fw-bold fs-5">Share :</span>
+                        <span class="col-auto fs-5 text-white my-auto"><i class="bi bi-facebook rounded-circle p-2" style="background-color: #3b5998;"></i></span>
+                        <span class="col-auto fs-5 text-white my-auto"><i class="bi bi-whatsapp rounded-circle p-2" style="background: linear-gradient(#25d366,#15a74b);"></i></span>
+                        <span class="col-auto fs-5 text-white my-auto"><i class="bi bi-instagram rounded-circle p-2" style="background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);"></i></span>
+                        <span class="col-auto fs-5 text-white my-auto"><i class="bi bi-twitter rounded-circle p-2" style="background-color: #55acee;"></i></span>
+                        <span class="col-auto fs-5 text-white my-auto"><i class="bi bi-linkedin rounded-circle p-2" style="background-color: #0082ca;"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="row col-12 col-xl-7 features justify-content-md-evenly">
+                    <div class="col col-sm-auto">
+                        <h5 class="fw-bold">Standard Features</h5>
+                        <ul class="features-list list-unstyled">
+                            <li class="feature-item text-muted">17-Inch Wheel</li>
+                            <li class="feature-item text-muted">LED headlights</li>
+                            <li class="feature-item text-muted">
+                                Rain-sensing windsheild wipers
+                            </li>
+                            <li class="feature-item text-muted">Push button start</li>
+                            <li class="feature-item text-muted">Forward collision warning</li>
+                            <li class="feature-item text-muted">Lane departure warning</li>
+                            <li class="feature-item text-muted">
+                                Front and rear parking sensors
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-auto">
+                        <h5 class="fw-bold">Additional Features</h5>
+                        <ul class="features-list list-unstyled">
+                            <li class="feature-item text-muted">17-Inch Wheel</li>
+                            <li class="feature-item text-muted">LED headlights</li>
+                            <li class="feature-item text-muted">
+                                Rain-sensing windsheild wipers
+                            </li>
+                            <li class="feature-item text-muted">Push button start</li>
+                            <li class="feature-item text-muted">Forward collision warning</li>
+                            <li class="feature-item text-muted">Lane departure warning</li>
+                            <li class="feature-item text-muted">
+                                Front and rear parking sensors
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-5 reviews text-center">
+                    <h4 class="fw-bold text-start">Reviews</h4>
+                    <div class="reviewbox row">
+                        <div class="col-6 col-lg-auto border-end text-center">
+                            <div class="rating row-cols-3 text-success">
+                                <span class="col fw-bold num">4.9</span>
+                                <span class="col fw-bold">/</span>
+                                <span class="col fw-bold">5.0</span>
+                            </div>
+                            <div class="row text-success">
+                                <span class="fs-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                            </div>
+                            <label class="fw-bold">Based on 300+ reviews</label>
+                        </div>
+                        <div class="col-6 col-lg text-start">
+                            <h5 class="fw-bold">Latest Reviews</h5>
+                            <label class="fw-bold ms-2">Comfortable and Superb</label>
+                            <p class="text-muted ms-2 justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consequuntur quidem voluptas iste adipisci eligendi praesentium excepturi alias harum magnam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Product End -->
+
+    <!-- Section Similar -->
+    <section class="similar mb-4">
+        <div class="container-fluid">
+            <div class="row similar_cars">
+                <div class="top-deals col-12 mb-3">
+                    <span class="position-relative d-flex justify-content-center">Check Out</span>
+                    <h1 class="col d-flex my-auto fw-bolder justify-content-center">Similar Cars</h1>
+                </div>
+                <div class="col-12 d-none d-md-block swiper-desk">
+                    <div class="swiper mySwiper_d1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/1.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Sport Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Bugati Chiron</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹21 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/2.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Dynamic Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Land Rover Defender</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹2.2 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/3.webp" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Sport Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Mclaren Speedtail</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹16 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Hybrid</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/4.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Sport Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Dodge Srt Demon</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹2 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/5.webp" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Sport Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Mclaren Senna</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹25 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/6.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Sport Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Koenigsegg Jesko</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹21 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/car/7.webp" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Premium Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Lexus Es</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹65 lakhs</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Petrol</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/E-Car/3.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Electric Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">BMW I8</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹4 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Electric</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                <img class="img-fluid" src="./img/E-Car/2.jpg" alt="Car">
+                                <div class="swiper-overlay text-white">
+                                    <header class="card-cartype">Electric Car</header>
+                                    <h1 class="card-carname fs-3 fw-bold text-uppercase">Porche Tycan</h1>
+                                    <span class="card-btn btn btn-light fw-bolder">₹15.5 Cr.</span>
+                                    <div class="card-about row g-0">
+                                        <div class="col-4">
+                                            Transmition
+                                            <span class="d-block">Automatic</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Fuel
+                                            <span class="d-block">Electric</span>
+                                        </div>
+                                        <div class="col-4">
+                                            Passenger
+                                            <span class="d-block">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination "></div>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none swiper-mob">
+                    <div class="d-flex justify-content-center overflow-hidden">
+                        <div class="swiper mySwiper_c1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/1.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Sport Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Bugati Chiron</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹21 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/2.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Dynamic Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Land Rover Defender</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹2.2 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/3.webp" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Sport Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Mclaren Speedtail</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹16 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Hybrid</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/4.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Sport Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Dodge Srt Demon</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹2 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/5.webp" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Sport Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Mclaren Senna</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹25 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/6.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Sport Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Koenigsegg Jesko</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹21 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/car/7.webp" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Premium Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Lexus Es</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹65 lakhs</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Petrol</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/E-Car/3.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Electric Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">BMW I8</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹4 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Electric</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" onClick="window.location.replace('product.html');">
+                                    <img class="img-fluid" src="./img/E-Car/2.jpg" alt="Car">
+                                    <div class="swiper-overlay text-white">
+                                        <header class="card-cartype">Electric Car</header>
+                                        <h1 class="card-carname fs-3 fw-bold text-uppercase">Porche Tycan</h1>
+                                        <span class="card-btn btn btn-light fw-bolder">₹15.5 Cr.</span>
+                                        <div class="card-about row g-0">
+                                            <div class="col-4">
+                                                Transmition
+                                                <span class="d-block">Automatic</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Fuel
+                                                <span class="d-block">Electric</span>
+                                            </div>
+                                            <div class="col-4">
+                                                Passenger
+                                                <span class="d-block">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Similar End -->
+
+    <!-- Footer -->
+    <div class="container-custom border-top border-2">
+        <footer class="pt-3 mt-4">
+            <div class="row border-bottom">
+                <div class="col-12 col-md-6 mb-3 pb-3 text-center text-md-start">
+                    <ul class="nav d-block">
+                        <li class="nav-item fs-4 fw-bold automobile">Automobile</li>
+                        <li class="nav-item">Best Site For Car Deals</li>
+                        <li class="nav-item text-muted">
+                            <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam quod veritatis quam, illo veniam, aliquid minus blanditiis.</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="col-12 col-md-6 nav justify-content-between justify-content-lg-evenly pb-3 mb-3">
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">About</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">How it works</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Careers</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">About us</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Media</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">Become Seller</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Add your vehicle</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Business Account</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Resource Center</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Community</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">Support</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Privacy Policy</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Legal Disclaimer</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Trust and Safety</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Cancelation Policy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-media nav justify-content-center my-2 py-2">
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-instagram" style="background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-facebook" style="background: #3b5998;"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-whatsapp" style="background: linear-gradient(#25d366,#15a74b);"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-twitter" style="background: #55acee;"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-linkedin" style="background: #0082ca;"></i></a></li>
+            </ul>
+            <p class="text-center text-black-50 automobile">&copy; 2022 Automobile</p>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Jquery JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

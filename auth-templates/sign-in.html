@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/auth.css" />
+</head>
+
+<body>
+
+    <!-- Hero Start -->
+    <section class="hero position-relative">
+        <div class="hero-overlay position-absolute"></div>
+        <video playsinline autoplay muted loop class="hero-video">
+    <source
+      class="hero-bg"
+      src="../img/video.mp4"
+      type="video/mp4"
+      Loading="lazy"
+      />
+  </video>
+        <div class="signup position-absolute text-white align-content-center container-custom">
+            <div class="signup-overlay rounded-1">
+                <form method="POST" name="signin-form">
+                    <div class="row h1 my-4">Sign In</div>
+                    <div class="row my-2 s-input">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">Email Address / Mobile number</label>
+                    </div>
+                    <div class="row mt-2 s-input">
+                        <input type="password" name="pass" id="password" minlength="8" maxlength="15" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="row form__forgot-pass">
+                        <a class="text-decoration-none d-flex justify-content-end pe-0" href="forgotpass.html">Forgot Password ?</a>
+                    </div>
+                    <div class="row my-3">
+                        <button type="button" value="Sign In" class="col btn btn-danger rounded-0 my-auto px-0 py-2 justify-content-center d-flex position-relative" id="Sign-in">Sign In
+                        </button>
+                    </div>
+                </form>
+                <div class="row justify-content-center">OR</div>
+                <div class="row my-3"><button class="col btn btn-outline-light rounded-0 my-auto px-0 py-2 justify-content-center d-flex position-relative" onClick="window.location.replace('sign-up.html');">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Jquery JS -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

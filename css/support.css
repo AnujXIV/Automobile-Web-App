@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "North Avellion";
+    src: url(../fonts/North\ Avellion\ DEMO.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "New York Grunge";
+    src: url(../fonts/FontsFree-Net-New-york-Regular-Grunge.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Ailerons";
+    src: url(../fonts/Ailerons-Regular.ttf) format('truetype');
+}
+
+:root {
+    --primary-font-clr: #f9f9f9;
+    --playfair-font: 'Playfair Display', serif;
+    --inter-font: 'Inter', sans-serif;
+    --north-avellion-font: 'North Avellion', serif;
+    --newyork-font: 'New York Grunge', serif;
+    --aileron-font: 'Ailerons', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--newyork-font);
+    /* background-color: black; */
+    /* background-color: #d5cec6; */
+}
+
+.automobile {
+    font-family: var(--aileron-font);
+}
+
+.container-custom {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
+
+@media (min-width:1000px) {
+    .container-custom {
+        padding: 0 100px;
+    }
+}
+
+@media (min-width:2000px) {
+    .container-custom {
+        padding: 0 250px;
+    }
+}
+
+.header {
+    z-index: 4;
+}
+
+.header-logo {
+    font-family: var(--aileron-font);
+    font-size: 1.4rem;
+}
+
+.navlist .nav-item:hover {
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212121;
+    z-index: 6;
+}
+
+.dropdown-nav__closeNavBtn {
+    color: #cc0000;
+}
+
+.mob-nav-list>a {
+    padding: 10px;
+    color: white;
+}
+
+.mob-nav-list>a>span:hover {
+    border-bottom: 1px solid;
+}
+
+.support {
+    height: 50vh;
+    width: 100%;
+}
+
+.support-overlay {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.support>img {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.support>div {
+    z-index: 2;
+}
+
+.HelpTopic>div>div>i {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.social-media>li>a>i {
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}

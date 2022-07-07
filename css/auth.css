@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "North Avellion";
+    src: url(../fonts/North\ Avellion\ DEMO.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "New York Grunge";
+    src: url(../fonts/FontsFree-Net-New-york-Regular-Grunge.ttf) format('ttf');
+}
+
+:root {
+    --primary-font-clr: #f9f9f9;
+    --playfair-font: 'Playfair Display', serif;
+    --inter-font: 'Inter', sans-serif;
+    --north-avellion-font: 'North Avellion', serif;
+    --newyork-font: 'New York Grunge', serif;
+}
+
+* {
+    /* color: var(--primary-font-clr); */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--newyork-font);
+}
+
+.container-custom {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+    .container-custom {
+        padding: 0 20%;
+    }
+}
+
+@media (min-width:1024px) {
+    .container-custom {
+        padding: 0 28%;
+    }
+}
+
+@media (min-width:1400px) {
+    .container-custom {
+        padding: 0 35%;
+    }
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 2;
+}
+
+@media (min-width:554px) {
+    .hero-video {
+        width: 100%;
+    }
+}
+
+.hero-overlay {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)); */
+}
+
+.signup {
+    z-index: 4;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.signup-overlay {
+    padding: 10% 15%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.signup-terms {
+    font-size: 0.6rem;
+}
+
+@media (min-width:500px) {
+    .signup-terms {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .signup-terms {
+        font-size: 0.8rem;
+    }
+}
+
+.signup-terms>span {
+    padding: 5px 0px;
+}
+
+.s-input {
+    position: relative;
+    padding: 10px 0;
+}
+
+.s-input input {
+    background: transparent;
+    padding: 0 .7rem;
+    border: none;
+    width: 100%;
+    height: 2rem;
+    transition: .2s;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    z-index: 2;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.s-input label {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    font-size: 0.8rem;
+    transition: .2s;
+    padding: 0 .1rem;
+    display: flex;
+    z-index: 1;
+    color: rgb(162, 162, 162);
+}
+
+.s-input input:focus~label,
+.s-input input:valid~label {
+    top: -10%;
+    color: white;
+}
+
+.s-input input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.form__forgot-pass {
+    font-size: 12px;
+}

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "North Avellion";
+    src: url(../fonts/North\ Avellion\ DEMO.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "New York Grunge";
+    src: url(../fonts/FontsFree-Net-New-york-Regular-Grunge.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Ailerons";
+    src: url(../fonts/Ailerons-Regular.ttf) format('truetype');
+}
+
+:root {
+    --primary-font-clr: #f9f9f9;
+    --playfair-font: 'Playfair Display', serif;
+    --inter-font: 'Inter', sans-serif;
+    --north-avellion-font: 'North Avellion', serif;
+    --newyork-font: 'New York Grunge', serif;
+    --aileron-font: 'Ailerons', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--newyork-font);
+}
+
+.automobile {
+    font-family: var(--aileron-font);
+}
+
+.container-custom {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
+
+@media (min-width:1000px) {
+    .container-custom {
+        padding: 0 100px;
+    }
+}
+
+@media (min-width:2000px) {
+    .container-custom {
+        padding: 0 250px;
+    }
+}
+
+.header {
+    z-index: 4;
+}
+
+.header-logo {
+    font-family: var(--aileron-font);
+    font-size: 1.4rem;
+}
+
+.navlist .nav-item:hover {
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212121;
+    z-index: 6;
+}
+
+.dropdown-nav__closeNavBtn {
+    color: #cc0000;
+}
+
+.mob-nav-list>a {
+    padding: 10px;
+    color: white;
+}
+
+.mob-nav-list>a>span:hover {
+    border-bottom: 1px solid;
+}
+
+.contact {
+    height: 50vh;
+    width: 100%;
+}
+
+.contact-overlay {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.contact>img {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contact>div {
+    z-index: 2;
+}
+
+.c-input {
+    position: relative;
+    padding: 10px 0;
+}
+
+.c-input input,
+.c-input textarea {
+    position: relative;
+    background: transparent;
+    padding: 0 .7rem;
+    border: none;
+    width: 100%;
+    height: 2rem;
+    transition: .2s;
+    border-bottom: 1px solid gray;
+    z-index: 3;
+    font-size: 1rem;
+}
+
+.c-input textarea {
+    resize: none;
+    width: 70%;
+    height: auto;
+    border: 1px solid gray;
+}
+
+.c-input label {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    font-size: 0.8rem;
+    transition: .2s;
+    padding: 0 .1rem;
+    display: flex;
+    z-index: 0;
+    color: gray;
+}
+
+.c-input input:focus~label,
+.c-input input:valid~label,
+.c-input textarea:focus~label,
+.c-input textarea:valid~label {
+    top: -40%;
+    color: black;
+}
+
+#text-message textarea:focus~label,
+#text-message textarea:valid~label {
+    top: -10%;
+}
+
+.c-input input:focus,
+.c-input textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.contact_us-content {
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#map {
+    height: 15rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.social-media>li>a>i {
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.wrapper-find,
+.wrapper-contact {
+    display: none;
+}
+
+.ContactContainer {
+    backdrop-filter: blur(3px);
+    background: linear-gradient(rgba(255, 255, 255, 0.009), rgba(255, 255, 255, 0.2));
+}
+
+.contact-menu>li.active {
+    border-bottom: 5px solid whitesmoke;
+    background: linear-gradient(rgba(255, 255, 255, 0.0009), rgba(255, 255, 255, 0.1));
+}

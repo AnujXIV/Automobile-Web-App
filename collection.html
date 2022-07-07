@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800&family=Trocchi&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/collection.css" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header container-custom position-relative" style="background-image: url(./img/pexels-kendall-hoopes-1015555.jpg);">
+        <div class="header-overlay"></div>
+        <nav class="navbar row text-white justify-content-between text-center align-content-center">
+            <div class="col d-flex">
+                <a class="header-logo text-decoration-none text-white fw-bold automobile" href="index.html">Automobile</a>
+            </div>
+            <div class="col col-lg-9 col-xl-10 container-fluid d-flex justify-content-end">
+                <span class="d-flex d-lg-none navbar-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-2 d-flex"></i
+          ></span>
+                <ul class="navlist list-unstyled d-none d-lg-inline-flex my-auto">
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('collection.html');">Collection</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('service.html');">Service</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('accessories.html');">Accessories</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('contact.html');">Contact</li>
+                    <li class="nav-item px-3 px-xl-4 my-auto" onClick="window.location.replace('auth-templates/sign-in.html');">Account</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Small Screen Navbar -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        <div class="container-custom mt-2 row text-white justify-content-between text-center align-content-center">
+            <div class="col d-flex justify-content-end container-fluid">
+                <span class="d-flex d-lg-none dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle
+navigation"><i class="bi bi-x-circle-fill fs-1"></i
+          ></span>
+            </div>
+            <div class="row align-items-center">
+                <div class="mob-nav-list col mt-5">
+                    <a href="collection.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Collection</span></a>
+                    <a href="service.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Service</span></a>
+                    <a href="accessories.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Accessories</span></a>
+                    <a href="contact.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Contact</span></a>
+                    <a href="auth-templates/sign-in.html" class="row justify-content-center text-decoration-none fs-1">
+                        <span class="col-auto">Account</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Small Screen Navbar End-->
+
+    <!-- Section Search -->
+    <section class="section_search position-relative">
+        <div class="container-custom">
+            <div class="wrapper position-relative">
+                <div class="row justify-content-center h1 fw-bold text-white">Collection</div>
+                <div class="bgbox px-5 py-4">
+                    <!-- <div class="row">
+                        <input type="search" name="search" id="search-bar" placeholder="Search...">
+                    </div> -->
+                    <div class="row filters mt-3">
+                        <div class="col-6 col-sm-3 d-flex position-relative">
+                            <select class="text-sm-center me-2 mx-sm-1" name="company" id="#dropmenu-brand" required>
+                                <option disabled selected hidden></option>
+                                <option value="nissan">Roll Royce</option>
+                                <option value="mercedes">Mercedes Benz</option>
+                                <option value="audi">Audi</option>
+                                <option value="lamborghini">Lamborghini</option>
+                                <option value="tesla">Tesla</option>
+                                <option value="bmw">BMW</option>
+                                <option value="toyota">Toyato</option>
+                                <option value="tata">TaTa</option>
+                                <option value="kia">Kia</option>
+                            </select>
+                            <label for="company" class="text-sm-center">Company</label>
+                        </div>
+                        <div class="col-6 col-sm-3 d-flex position-relative">
+                            <select class="text-sm-center me-2 mx-sm-1" name="year" id="#year" required>
+                                <option disabled selected hidden></option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2005">2005</option>
+                                <option value="2010">2010</option>
+                                <option value="2015">2015</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                            <label for="year" class="text-sm-center">Year</label>
+                        </div>
+                        <div class="col-6 col-sm-3 d-flex position-relative mt-3 mt-sm-auto">
+                            <select class="text-sm-center me-2 mx-sm-1" name="model" id="#model" required>
+                                <option disabled selected hidden></option>
+                                <option value="aclass">A-class</option>
+                                <option value="bclass">B-class</option>
+                                <option value="cclass">C-class</option>
+                                <option value="dclass">D-class</option>
+                            </select>
+                            <label for="model" class="text-sm-center">Model</label>
+                        </div>
+                        <div class="col-6 col-sm-3 d-flex position-relative mt-3 mt-sm-auto">
+                            <select class="text-sm-center me-2 mx-sm-1" name="price" id="#price" required>
+                                <option disabled selected hidden></option>
+                                <option value="1k">$0-$10000</option>
+                                <option value="2k">$10000-$15000</option>
+                                <option value="3k">$15000-$20000</option>
+                                <option value="4k">$20000-$25000</option>
+                                <option value="5k">$25000-$30000</option>
+                                <option value="6k">$30000-$35000</option>
+                                <option value="7k">$35000-$40000</option>
+                            </select>
+                            <label for="price" class="text-sm-center">Price</label>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-3">
+                        <div class="col"><button class="btn btn-outline-dark px-5 py-2">Search</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Search End -->
+
+    <!-- Section Car List -->
+    <section class="section_carlist position-relative mt-4">
+        <div class="container-custom">
+            <div class="row">
+                <div class="h1 text-black fw-bold">Hot Picks</div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-2">
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/E-Car/1.jpg" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Mercedes Benz EQC</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹54 Lakhs</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Electric</div>
+                                <div class="col-auto text-nowrap border-end">2021</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">Mercedes-Benz EQC is a five-seat electric SUV based on the heavily modified version of the GLC. In terms of measurements, the EQC is 105mm longer and sits 315mm lower than the GLC. However, it gets a similar wheelbase of
+                                    2,873mm.
+                                </p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/E-Car/2.jpg" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Porche Tycan</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹1.5 Cr.</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Electric</div>
+                                <div class="col-auto text-nowrap border-end">2022</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">The best sports moments are the seconds after the runners' high – when our soul is in perfect balance. With the new Taycan Sport Turismo models, this feeling can be experienced every day. Enjoy the most energetic form of
+                                    inner balance.</p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/E-Car/4.jpg" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Lucid AIr</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹70 Lakhs</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Electric</div>
+                                <div class="col-auto text-nowrap border-end">2021</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">At Lucid, we believe in the dream ahead. Our relentless focus on ahead. Our relentless focus on innovation, luxury, and innovation, luxury, and sustainability moves us toward a sustainability moves us toward a future where
+                                    you no longer have to future where you no longer have to choose between doing great things choose between doing great things and doing the right thing.</p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/E-Car/7.jpg" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Tesla Model S</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹1 Cr.</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Electric</div>
+                                <div class="col-auto text-nowrap border-end">2023</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc.. The Model S features a dual-motor, all-wheel drive layout, although earlier versions of the Model S featured a rear-motor
+                                    and rear-wheel drive layout.</p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/car/1.jpg" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Bugati Chiron</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹21 Cr.</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Sport</div>
+                                <div class="col-auto text-nowrap border-end">2015</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">he Bugatti Chiron has 2 Petrol Engine on offer. The Petrol engine is 7993 cc and 7998 cc . It is available with the Automatic transmission.</p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 my-1">
+                    <div class="car-item row p-2 rounded mx-1">
+                        <div class="col-12 col-md-6 p-1 pe-md-2 my-auto">
+                            <img class="rounded" src="./img/car/5.webp" alt="car-image">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-sm-3">
+                                <div class="col-7 h4 fw-bold my-auto">Mclaren Senna</div>
+                                <div class="col-5 h3 fw-bold text-end my-auto">₹30 Cr.</div>
+                            </div>
+                            <div class="row text-muted list_tags text-center mt-sm-1">
+                                <div class="col-auto border-end">Sport</div>
+                                <div class="col-auto text-nowrap border-end">2020</div>
+                                <div class="col-auto">Automatic</div>
+                            </div>
+                            <div class="row mt-2 mt-sm-4 description text-muted">
+                                <p class="justify-text">The McLAREN Senna is the personification of McLAREN's DNA at its most extreme, creating the purest connection between car and driver. It is the most track-focused road car we have ever built.</p>
+                            </div>
+                            <div class="row d-flex justify-content-center mx-auto mx-sm justify-content-sm-end">
+                                <button class="col-auto btn btn-sm btn-outline-dark mx-1"><i class="bi bi-text-center"></i> More Details</button>
+                                <button class="col-auto btn btn-sm btn-success mx-1"><i class="bi bi-bag"></i> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <ul class="pagination my-auto justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link text-black" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-white bg-black" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link text-black" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Section Car List End -->
+
+    <!-- Footer -->
+    <div class="container-custom border-top border-2">
+        <footer class="pt-3 mt-4">
+            <div class="row border-bottom">
+                <div class="col-12 col-md-6 mb-3 pb-3 text-center text-md-start">
+                    <ul class="nav d-block">
+                        <li class="nav-item fs-4 fw-bold automobile">Automobile</li>
+                        <li class="nav-item">Best Site For Car Deals</li>
+                        <li class="nav-item text-muted">
+                            <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam quod veritatis quam, illo veniam, aliquid minus blanditiis.</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="col-12 col-md-6 nav justify-content-between justify-content-lg-evenly pb-3 mb-3">
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">About</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">How it works</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Careers</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">About us</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Media</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">Become Seller</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Add your vehicle</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Business Account</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Resource Center</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Community</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link px-2 fs-6">
+                            <ul class="nav d-block">
+                                <li class="nav-item fw-bold fs-5"><a class="text-decoration-none text-black">Support</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Privacy Policy</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Legal Disclaimer</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Trust and Safety</a></li>
+                                <li class="nav-item"><a href="#" class="text-decoration-none text-black-50">Cancelation Policy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-media nav justify-content-center my-2 py-2">
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-instagram" style="background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-facebook" style="background: #3b5998;"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-whatsapp" style="background: linear-gradient(#25d366,#15a74b);"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-twitter" style="background: #55acee;"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-linkedin" style="background: #0082ca;"></i></a></li>
+            </ul>
+            <p class="text-center text-black-50 automobile">&copy; 2022 Automobile</p>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Jquery JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/collection.js"></script>
+</body>
+
+</html>
