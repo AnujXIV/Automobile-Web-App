@@ -211,3 +211,7 @@ body {
     border-bottom: 5px solid whitesmoke;
     background: linear-gradient(rgba(255, 255, 255, 0.0009), rgba(255, 255, 255, 0.1));
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

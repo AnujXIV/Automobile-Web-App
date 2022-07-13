@@ -169,3 +169,7 @@ body {
 .form__forgot-pass {
     font-size: 12px;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

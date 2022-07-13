@@ -136,3 +136,7 @@ body {
     padding: 10px;
     color: white;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

@@ -257,3 +257,7 @@ body {
     outline: none;
     border-radius: .3rem;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

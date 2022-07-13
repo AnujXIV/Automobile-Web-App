@@ -29,6 +29,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -156,12 +157,15 @@ body {
     0% {
         width: 0%;
     }
+
     35% {
         width: 100%;
     }
+
     65% {
         width: 100%;
     }
+
     100% {
         width: 0%;
     }
@@ -240,6 +244,7 @@ body {
     from {
         transform: translateY(0px);
     }
+
     to {
         transform: translateY(-10px);
     }
@@ -262,6 +267,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -274,6 +280,7 @@ body {
 }
 
 @media (min-width:768px) {
+
     .section-1>div,
     .section-2>div,
     .section-3>div {
@@ -533,7 +540,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "c7 c7 c7 c7 c2 c8" "c9 c1 c1 c1 c2 c8" "c9 c4 c3 c3 c2 c8" "c9 c4 c3 c3 c2 c8" "c9 c4 c5 c5 c5 c8" "c9 c4 c6 c6 c6 c6";
+    grid-template-areas: "c7 c7 c7 c7 c2 c8""c9 c1 c1 c1 c2 c8""c9 c4 c3 c3 c2 c8""c9 c4 c3 c3 c2 c8""c9 c4 c5 c5 c5 c8""c9 c4 c6 c6 c6 c6";
     width: 60%;
     height: 100%;
     background-position: center;
@@ -557,6 +564,7 @@ body {
     0% {
         border: .1rem solid #eee;
     }
+
     100% {
         border: 0rem solid #eee;
     }
@@ -617,6 +625,7 @@ body {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(100%);
     }
@@ -635,6 +644,7 @@ body {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -653,6 +663,7 @@ body {
     0% {
         transform: translateY(0%);
     }
+
     100% {
         transform: translateY(100%);
     }
@@ -671,6 +682,7 @@ body {
     0% {
         transform: translateY(0%);
     }
+
     100% {
         transform: translateY(-100%);
     }
@@ -693,6 +705,7 @@ body {
         height: 0;
         outline: 7rem solid #eee;
     }
+
     100% {
         width: 100%;
         height: 100%;
@@ -704,4 +717,8 @@ body {
     background-color: lightgray;
     padding: 1rem;
     border-bottom: 1px solid gray;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

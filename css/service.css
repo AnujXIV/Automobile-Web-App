@@ -316,3 +316,7 @@ body {
     opacity: 1;
     transition: 1s;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

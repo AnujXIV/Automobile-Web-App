@@ -395,3 +395,7 @@
         -webkit-backdrop-filter: blur(10px);
         height: min-content;
     }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
